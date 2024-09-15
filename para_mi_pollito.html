@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi unica amarilla</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            color: #880e4f;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: fadeIn 3s ease;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #d81b60;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ad1457;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin: 10px 0;
+            background-color: #f8bbd0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 50%;
+            margin-top: 20px;
+            animation: pulse 4s infinite;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2em;
+            animation: bounce 2s infinite;
+        }
+
+        button:hover {
+            background-color: #ad1457;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>¡Hola tefa!</h1>
+    <h2>Hice una pagina un poco cutre pero algo especial</h2>
+    <p>Quiero decirte que no se por que estas triste o estes mal ,pero se que no quiero verte asi 
+        ,por eso cree esta pagina y espero que pueda ayudarte en eso, con mucho cariño tu Cachorro.</p>
+    
+    <ul>
+        <li>Tienes una sonrisa que ilumina los días de muchas personas🌟</li>
+        <li>Eres amable,trabajadora y portas un gran corazon 💗</li>
+        <li>Siempre sabes cómo hacernos reir y siempre muestras esa sonrisa bella😊</li>
+        <li>Eres mi compañera y una persona especial, asi que por favor recuperate</li>
+    </ul>
+
+    <img src="eso pe.jpg" alt="Un corazón especial para ti">
+    
+    <button onclick="showLove()">Hazme clic</button>
+
+</div>
+
+<script>
+    function showLove() {
+        alert('¡que eres una persona especial ,una persona maravillosa y alguien unica para su tonto creador! 🥹');
+    }
+</script>
+
+</body>
+</html>
